@@ -16,28 +16,7 @@ header h1{
     margin: 0;
     font-size: 22px;
 }
-nav{
-    height: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #f8f8f8;
-    border-radius: 10px;
-    margin-bottom: 10px;
-}
-nav ul{
-    list-style-type: none;
-    margin: 0 20px;
-    padding: 0;
-    display: flex;
-}
-nav li{
-    margin: 0 20px;
-}
-nav a{
-    text-decoration: none;
-    color: #333;
-}
+
 main{
     max-width: 800px;
     margin: 0 auto;
@@ -92,4 +71,51 @@ footer{
     color: #ffff;
     padding: 20px;
     border-radius: 10px 10px 0 0;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+    main {
+        padding: 20px;
+    }
+
+    .borderlist li, .contactlist li {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    section {
+        padding: 8px;
+    }
+
+    .borderlist li, .contactlist li {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 15px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    section {
+        padding: 5px;
+    }
+
+    footer {
+        padding: 15px;
+    }
 }
